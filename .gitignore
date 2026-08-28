@@ -1,0 +1,51 @@
+# ---- Secrets — real env files only, never the .example templates ----
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Node / Next.js ----
+node_modules/
+.next/
+out/
+next-env.d.ts
+frontend/node_modules/
+frontend/.next/
+
+# ---- Build output ----
+dist/
+build/
+
+# ---- Databases / local service data ----
+pg_data/
+*.sqlite3
+*.db
+
+# ---- Logs and temp files ----
+*.log
+npm-debug.log*
+.DS_Store
+*.tmp
+*.temp
+tmp/
+
+# ---- Editor/IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Test/coverage output ----
+.coverage
+htmlcov/
+coverage/
